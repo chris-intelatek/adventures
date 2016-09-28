@@ -1,2 +1,7 @@
 <h1>Homepage</h1>
 <p>This is the homepage</p>
+<ul>
+  <% @skiing_images.shuffle.each do |pics| %>
+  <li><%= image_tag pics, class: "img-responsive" %></li>
+  <% end %>
+</ul>

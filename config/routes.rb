@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   root 'my_site#index'
 
   get 'about' => 'my_site#about'
-  get 'ilovetocode' => 'my_site#index'
+  get 'contact' => 'my_site#contact'
+  get 'colors' => 'my_site#colors'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

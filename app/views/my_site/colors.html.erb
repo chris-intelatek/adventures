@@ -1,0 +1,13 @@
+<style>
+    body {
+        background: <%= @color %>;
+    }
+</style>
+
+<h1>Colors</h1>
+<p>Clicking on the buttons below will change the background to the selected color.</p>
+
+<%= link_to "Green", about_path(color: "green"), class: "btn btn-success" %>
+<%= link_to "Blue", colors_path(color: "blue"), class: "btn btn-primary" %>
+<%= link_to "Orange", colors_path(color: "orange"), class: "btn btn-warning" %>
+<%= link_to "Red", colors_path(color: "red"), class: "btn btn-danger" %>
